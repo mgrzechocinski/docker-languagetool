@@ -26,6 +26,8 @@ steps:
     - 'europe-west4'
     - '--port'
     - '8010'
+    - '--memory'
+    - '512Mi'
     - '--platform'
     - 'managed'
     - '--allow-unauthenticated'
