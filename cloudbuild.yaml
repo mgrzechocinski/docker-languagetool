@@ -18,6 +18,8 @@ steps:
     - 'gcr.io/$PROJECT_ID/language-tool:4.8'
     - '--region'
     - 'europe-west4'
+    - '--port'
+    - '8010'
     - '--platform'
     - 'managed'
     - '--allow-unauthenticated'
