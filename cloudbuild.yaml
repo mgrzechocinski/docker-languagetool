@@ -2,7 +2,13 @@ steps:
   # Build and image using existing Dockerfile
   - name: 'gcr.io/cloud-builders/docker'
     id: Build
-    args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/language-tool:4.8', '.']
+    args: 
+      - 'build'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/language-tool:4.8'
+      - '--cache-from'
+      - 'gcr.io/$PROJECT_ID/language-tool:4.8'
+      - '.'
   # Push an image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
     id: Push
