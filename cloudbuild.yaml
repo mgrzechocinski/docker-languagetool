@@ -17,7 +17,7 @@ steps:
     args:
     - 'run'
     - 'deploy'
-    - 'docker-languagetool-demo'
+    - 'docker-languagetool'
     - '--image'
     - 'gcr.io/$PROJECT_ID/language-tool:latest'
     - '--region'
