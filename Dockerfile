@@ -13,7 +13,7 @@ RUN set -ex \
         unzip
 
 
-ENV VERSION 4.8
+ENV VERSION 4.9.1
 ADD https://www.languagetool.org/download/LanguageTool-$VERSION.zip /LanguageTool-$VERSION.zip
 
 RUN unzip LanguageTool-$VERSION.zip \
